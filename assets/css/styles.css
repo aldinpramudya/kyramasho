@@ -1,0 +1,19 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Syne:wght@400;500;600&display=swap');
+
+:root{
+    /* COLOR */
+    --hue: 255;
+    --first-color: hsl(var(--hue), 90%, 60%);
+    --first-color-alt: hsl(var(--hue), 82%, 56%);
+    --first-color-light: hsl(var(--hue), 40%, 80%);
+    --title-color: hsl(var(--hue), 24%, 16%);
+    --text-color: hsl(var(--hue), 8%, 45%);
+    --text-color-light: hs(var(--hue), 8%, 60%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(0, 0%, 100%);
+    --shadow-color: hsla(var(--hue), 90%. 30%, .1);
+}
+
+*{}
