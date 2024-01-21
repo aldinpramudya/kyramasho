@@ -11,7 +11,7 @@
     --first-color-light: hsl(var(--hue), 40%, 80%);
     --title-color: hsl(var(--hue), 24%, 16%);
     --text-color: hsl(var(--hue), 8%, 45%);
-    --text-color-light: hs(var(--hue), 8%, 60%);
+    --text-color-light: hsl(var(--hue), 8%, 60%);
     --white-color: hsl(0, 0%, 100%);
     --body-color: hsl(0, 0%, 100%);
     --container-color: hsl(0, 0%, 100%);
@@ -526,6 +526,79 @@ services__modal-content::-webkit-scrollbar{
     padding-bottom: 4rem;
 }
 
+/* ===CONTACT=== */
+.contact__container{
+    padding-bottom: 4rem;
+}
+
+.contact__button{
+    justify-self: center;
+}
+
+.contact__page{
+    padding-block: 1rem 4rem;
+}
+
+.contact__box{
+    position: relative;
+    width: 100%;
+    height: 58px;
+}
+
+.contact__input{
+    width: 100%;
+    height: 100%;
+    background-color: var(--body-color);
+    border: 3px solid var(--text-color-light);
+    padding: .5rem 1.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: border-color .4s, background-color .4s;
+}
+
+.contact__input:focus{
+    border-color: var(--title-color);
+}
+
+.contact__input:-webkit-autofill{
+    transition: background-color 6000s, color 6000s;
+}
+
+.contact__label{
+    position: absolute;
+    top: -16px;
+    left: 16px;
+    font-size: var(--smal-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    background-color: var(--body-color);
+    padding: 8px;
+    transition: background-color .4s;
+}
+
+.contact__area{
+    height: 10rem;
+}
+
+.contact__area textarea{
+    resize: none;
+    padding-top: 1.25rem;
+}
+
+.contact__send{
+    margin-top: 100px;
+    padding-block: 1.25rem;
+    cursor: pointer;
+}
+
+.contact__message{
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
 
 
 

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    
+
     <!-- Remixicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css">
     <!-- CSS -->
@@ -12,6 +13,7 @@
     <!-- Swiper CSS -->
     <title></title>
 </head>
+
 <body>
     <header class="header header-pages" id="header">
         <nav class="nav container">
@@ -50,7 +52,35 @@
     </header>
 
     <main class="main">
+        <section class="contact section">
+            <h2 class="section__title">
+                Hit Me !
+            </h2>
 
+            <div class="contact__page contact grid">
+                <form action="" class="contact__form grid" id="contact-form">
+                    <div class="contact__group grid">
+                        <div class="contact__box">
+                            <input type="text" name="user_name" id="name" required placeholder="Write your name"
+                                class="contact__input">
+                            <label for="name" class="contact__label">First Name</label>
+                        </div>
+                        <div class="contact__box">
+                            <input type="email" name="user_email" id="email" required placeholder="Write Your Email"
+                                class="contact__input">
+                            <label for="email" class="contact__label">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" required placeholder="Write your message"
+                            class="contact_input"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                    </div>
+                    <p class="contact__message" id="contact-message"></p>
+                    <button type="submit" class="contact__send button">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -59,8 +89,11 @@
 
     <!-- Script Main -->
     <script src="/assets/js/main.js"></script>
+    <!-- Contact EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Script Index -->
-    <script src="/assets/js/index.js"></script>
-    
+    <script src="/assets/js/contact.js"></script>
+
 </body>
+
 </html>
